@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="Es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+   var day = parseInt(prompt("Ingrese un número del 0 al 6")); 
+   var dayName; 
+
+   switch (day) {
+    case 0:
+        dayName = "Sunday";
+        break;
+    case 1:
+        dayName = "Monday";
+        break;
+     case 2:
+        dayName = "Tusday";
+        break;
+     case 3:
+        dayName = "Wednesday";
+        break;
+        case 4:
+        dayName = "Thursday";
+        break;
+     case 5:
+        dayName = "Friday";
+        break;
+    case 6:
+        dayName = "Satuday";
+        break;
+    default: 
+        dayName = "invalid Day";
+   }
+
+   console.log ("Today is " + dayName);
+   
+
+
+</script>
+<style> body{
+    background-color: darkgray;
+}
+h1{
+    text-align: center;
+    background-color: black;
+    color: aliceblue;
+}
+p{
+    max-width: 1000px;
+    text-align:left;
+    background-color: black;
+    color: aliceblue;
+    font-size:x-large;
+    display: flex;
+    justify-content: center;
+}</style>
+<body>
+    <h1>Ejercicio Dia de la Semana</h1>
+    <p>  Vamos a ver un ejemplo sencillo de
+         cómo se usa switch para determinar el día de la semana basado en un número.
+    </p>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boliche</title>
+    <script>  
+
+    /* Ejercicio si una persona puede entrar al boliche si es mayor de edad  y tiene cedula*/
+       
+    function entrada(Edad, Cedula){
+        let autorizado=""; 
+        if ((Edad >= 18) && (Cedula)) {
+        autorizado = "Usted Puede ingresar";
+        }else { 
+        autorizado ="Usted No Puede ingresar";
+        }    
+        return autorizado;   
+        }
+        
+        var Edad = 0;
+        Edad = prompt("Ingrese su Edad");
+        var Cedula = confirm("si trajo su Cedula dar en Aceptar en caso contrario en Cancelar");
+        //
+        alert("DECISIÓN DEL BOLICHE: " + entrada(Edad, Cedula ));
+      
+    /*
+    var Edad = 0;
+    Edad = prompt("Ingrese su Edad");
+    var Cedula = confirm("si trajo su Cedula dar en Aceptar en caso contrario en Cancelar");
+
+    if ((Edad >= 18) && (Cedula)) {
+        alert("Usted Puede ingresar");
+    }else { 
+        alert("Usted No Puede ingresar");
+    }
+    /*En este ejercicio se tomo una caracteristicas de los valores
+     "truthy" y "falsy" en JavaScript sin necesidar de usar el operador == dentro de if */ 
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

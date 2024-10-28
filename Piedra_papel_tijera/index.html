@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piedra, Papel, Tijera</title>
+    <style>
+        h1{
+            display: flex;
+            justify-content: center;
+            background-color: aquamarine;
+            margin: 50px;
+        }
+        
+        
+        .choices{ 
+                  display: flex;
+                  justify-content: center; 
+                  gap: 20px;
+                  background-color: black;
+                  padding: 30px;
+                  margin: 50px;
+                  
+                }
+
+         button { width: 200px;
+                  height: 80px; 
+                  border-radius:20px;
+                  border:none; 
+                  background-color:chocolate;
+                  font-size: 25px;
+                  font-weight: bold;
+                }
+
+        .result { margin: 50px;
+                  font-size: 30px;
+                  font-weight: bold;
+                  text-align: center;
+                  background-color: black;
+                  color: bisque; 
+                }
+    </style>
+    <script src="/Piedra_papel_tijera/js/script.js"></script>
+</head>
+<body>
+    <h1>Piedra, Papel, Tijera</h1>
+    <div class="choices">
+        <button onclick="jugar(1)">Piedra</button>
+        <button onclick="jugar(2)">Papel</button>
+        <button onclick="jugar(3)">Tijera</button>
+    </div>
+    
+    <div class="result" id="result"></div>
+</body>
+</html>

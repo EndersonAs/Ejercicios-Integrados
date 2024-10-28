@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<script>
+    function calculator(num1, num2, operation) {
+        
+        switch (operation) {
+            case '+':
+                return num1 + num2;
+                case '-':
+                return num1 - num2;
+                case '*':
+                return num1 * num2;
+                case '/':
+                return num1 / num2;
+            default:
+                return "invalid operation"
+        }
+    }
+       var num1 = parseInt(prompt("ingrese un numero"));
+       var operation = prompt("ingrese algunas de las cuatro operaciones basicas +, -, *, /");
+       var num2 = parseInt(prompt("ingrese otro numero"));
+       
+
+console.log(calculator(num1, num2, operation));      
+
+
+
+
+</script>
+<style> body{
+    background-color: darkgray;
+}
+h1{
+    text-align: center;
+    background-color: black;
+    color: aliceblue;
+}
+p{
+    max-width: 1000px;
+    text-align:left;
+    background-color: black;
+    color: aliceblue;
+    font-size:x-large;
+    display: flex;
+    justify-content: center;
+}</style>
+<body>
+    <h1>Ejercicio: Calculadora Simple</h1>
+    <p>  Escribe una función llamada calculator que tome dos números y una operación como parámetros. La función debe usar una instrucción switch para realizar la operación y devolver el resultado. Las operaciones pueden ser: add (sumar), subtract (restar), multiply (multiplicar) y divide (dividir).
+        <br>
+        Pasos:
+        Define la función calculator que tome tres parámetros: num1, num2, y operation.
+        <br>
+        Dentro de la función, usa una instrucción switch para evaluar la operación.
+        <br>
+        Realiza la operación correspondiente para cada caso (add, subtract, multiply, divide).
+        <br>
+        Devuelve el resultado de la operación.
+        <br>
+        Si la operación no es válida, devuelve un mensaje indicando que la operación no es válida.
+    </p>
+
+</body>
+</html> 

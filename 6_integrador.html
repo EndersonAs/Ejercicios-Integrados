@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var num_1 = prompt("ingrese el primer numero para la resta");
+        var num_2 = prompt("ingrese el segundo numero para la resta");
+        var resta = num_1 - num_2;
+        
+        if (resta > 0 ){
+            alert("Es mayor a cero " +  "Resultado de la resta: " + resta); 
+            let impar = resta % 2;
+            if(impar == 0){
+                alert("es par")
+            }else {
+                alert("es impar")
+            }
+
+        }else {
+            alert("Es menor o igual a 0")
+        }
+
+    </script>
+    <style>
+        body{
+            background-color: darkgray;
+        }
+        h1{
+            text-align: center;
+            background-color: black;
+            color: aliceblue;
+        }
+        p{
+            max-width: 1000px;
+            text-align:left;
+            background-color: black;
+            color: aliceblue;
+            font-size:x-large;
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Ejercicio integrador de condicionales</h1>
+    <p>•
+        •
+        Ejercicio Práctico
+        <br>
+        Ingresar dos numeros mediante un prompt y almacenar sus valores en dos
+        variables distintas.
+        <br>
+        Realizar una resta entre los dos valores en Javascript.
+        <br>
+        Almacenar el resultado en una variable.
+        <br>
+        Importar el archivo JS desde una página HTML.
+        <br>
+        Si el resultado de la resta es mayor a 0, mostrar mediante un console.log() o un
+        alert() el mensaje "es mayor a 0".
+        <br>
+        Si es mayor a cero, comparar si el numero es par, en caso de que lo sea,
+        mostrar un mensaje "Es par" en caso de que no uno que diga "es impar".
+        <br>
+        En caso que sea menor a 0, mostrar un mensaje que diga "es menor o igual a 0".</p>
+</body>
+</html>
