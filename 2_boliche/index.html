@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boliche</title>
+    <link rel="stylesheet" href="/2_boliche/2_boliche.css">
+    
+</head>
+<body>
+    <section class="header">
+        <h1>Ejercicio Boliche</h1>
+        <p>Ejercicio si una persona puede entrar al boliche si es mayor de edad  y tiene cedula
+        </p>
+        </section>
+    <section class="container">  
+        <!--Entrada Edad-->
+    <label for="userInput">Ingrese su edad</label> 
+    <input type="number" id="userInput" placeholder="Ingresa un valor">
+    <!--Entrada Cedula-->
+    <label for="exampleCheckbox">Marcar si tiene Cedula</label>
+    <input type="checkbox" id="exampleCheckbox">
+    
+    <button id="submit" onclick="ejecutarEdad()">Calcular</button>
+
+   
+    
+    <p id="resultado" aria-live="polite"></p>
+    </section>
+
+<script src="/2_boliche/2_boliche.js"></script>  
+</body>
+</html>

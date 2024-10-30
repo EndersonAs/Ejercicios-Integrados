@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Mascota</title>
+   <link rel="stylesheet" href="/11_form_mascota/11_form_mascota.css">
+</head>
+<body>
+    <section class="header">
+        <h1>Ejercicio Formulario</h1>
+        <p>Es un Ejercicio con un formulario y mostrar su registo en la parte inferior
+        </p>
+        </section>
+    <div class="container">
+        <h2>Registro de Mascota</h2>
+        <form id="registroMascota">
+            <label for="nombreMascota">Nombre de la Mascota:</label>
+            <input type="text" id="nombreMascota" placeholder="Ingresa el nombre de la mascota" required>
+            
+            <label for="tipoMascota">Tipo de Mascota:</label>
+            <select id="tipoMascota" required>
+                <option value="">Selecciona el tipo de mascota</option>
+                <option value="Perro">Perro</option>
+                <option value="Gato">Gato</option>
+                <option value="Ave">Ave</option>
+                <option value="Otro">Otro</option>
+            </select>
+            
+            <label for="edadMascota">Edad de la Mascota (en años):</label>
+            <input type="number" id="edadMascota" placeholder="Ingresa la edad de la mascota" required>
+            
+            <label for="razaMascota">Raza de la Mascota:</label>
+            <input type="text" id="razaMascota" placeholder="Ingresa la raza de la mascota" required>
+            
+            <button type="button" onclick="registrarMascota()">Registrar</button>
+        </form>
+        <p id="resultado"></p>
+    </div>
+
+    <script src="/11_form_mascota/11_form_mascota.js"></script>
+</body>
+</html>

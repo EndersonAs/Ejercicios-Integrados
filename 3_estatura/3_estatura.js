@@ -1,4 +1,4 @@
- /*  Ejercicio donde una persona igresa su estatura y recibe una respuesta
+ /*  Ejercicio donde una persona ingresa su estatura y recibe una respuesta
     es de estatura baja, media o alta*/
 
     function ejecutarEstatura() {
@@ -17,5 +17,5 @@
     }
 
     // Muestra el resultado en pantalla
-    document.getElementById('resultado').textContent = resultadoAlgoritmo;
+document.getElementById('resultado').textContent = resultadoAlgoritmo;
 }
